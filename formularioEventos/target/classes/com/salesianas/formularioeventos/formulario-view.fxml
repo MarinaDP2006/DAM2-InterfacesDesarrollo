@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="497.0" prefWidth="354.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.salesianas.formularioeventos.formularioController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FORM - EVENTOS" />
+
+    <!-- NOMBRE -->
+    <TextField fx:id="txtNombre" promptText="Introduce tu nombre" />
+
+    <!--APELLIDOS + GUARDAR SOLO SI NOMBRE Y APELLIDOS TIENEN TEXTO-->
+    <TextField fx:id="txtApellidos" promptText="Introduce tus apellidos" />
+
+    <!-- SLIDER -->
+    <Text text="Seleccionar experiencia" />
+
+    <!-- SEGUNDO SLIDER DE 0-5 y label de tiempo real -->
+    <Slider fx:id="sliderExp" max="5" min="0" value="2" />
+    <Label fx:id="lblExp" text="Exp: 2">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+
+    <!-- VALOR DEL SLIDER -->
+    <Text text="Seleccionar valor" />
+    <Slider fx:id="sliderValor" blockIncrement="1" max="10" min="0" value="5" />
+    <Label fx:id="lblValorSlider" text="Valor: 5">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font></Label>
+
+    <!-- GUARDAR -->
+    <Button fx:id="btnGuardar" onAction="#onGuardarClick" text="GUARDAR" />
+
+    <!--LIMPIAR (VACIA TODO Y REINICIA EL SLIDER)-->
+    <Button fx:id="btnLimpiar" onAction="#limpiar" text="LIMPIAR" />
+
+    <!-- RESULTADO -->
+    <Label fx:id="lblResultado" text="Resultado">
+      <font>
+         <Font name="System Italic" size="12.0" />
+      </font></Label>
+</VBox>

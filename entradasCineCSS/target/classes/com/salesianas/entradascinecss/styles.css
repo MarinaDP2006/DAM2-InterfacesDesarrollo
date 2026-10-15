@@ -1,0 +1,149 @@
+/* =========================================================
+   HOJA DE ESTILOS PERSONALIZADA - RESERVA DE CINE
+   Archivo: entradascine.css
+   ========================================================= */
+
+/* Fondo general de la ventana */
+.root {
+    -fx-background-color: #f8f9fa;
+    -fx-font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Título de la aplicación */
+.title {
+    -fx-text-fill: #212529;
+    -fx-font-weight: bold;
+}
+
+/* ---------------------------------------------------------
+   ESTILOS DE MENSAJES Y ALERTAS (lblEstado y lblTotal)
+   --------------------------------------------------------- */
+.alert-warning {
+    -fx-background-color: #fff3cd;
+    -fx-text-fill: #664d03;
+    -fx-border-color: #ffecb5;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 12px;
+    -fx-font-weight: bold;
+}
+
+.alert-success {
+    -fx-background-color: #d1e7dd;
+    -fx-text-fill: #0f5132;
+    -fx-border-color: #badbcc;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 12px;
+    -fx-font-weight: bold;
+}
+
+.alert-danger {
+    -fx-background-color: #f8d7da;
+    -fx-text-fill: #842029;
+    -fx-border-color: #f5c2c7;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 12px;
+    -fx-font-weight: bold;
+}
+
+.alert-info {
+    -fx-background-color: #cff4fc;
+    -fx-text-fill: #055160;
+    -fx-border-color: #b6effb;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* ---------------------------------------------------------
+   CONTROLES DE FORMULARIO (ComboBox, Spinner, TextArea)
+   --------------------------------------------------------- */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.combo-box:focused {
+    -fx-border-color: #86b7fe;
+    -fx-effect: dropshadow(three-pass-box, rgba(13, 110, 253, 0.25), 4, 0, 0, 0);
+}
+
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-font-family: 'Consolas', 'Courier New', monospace;
+    -fx-font-size: 13px;
+}
+
+/* ---------------------------------------------------------
+   ESTILOS DE BOTONES
+   --------------------------------------------------------- */
+
+/* Botones + y - */
+.btn-secondary {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #5c636a;
+}
+
+/* Botón CALCULAR PRECIO */
+.btn-primary {
+    -fx-background-color: #0d6efd;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #0b5ed7;
+}
+
+/* Botón LIMPIAR */
+.btn-danger {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #bb2d3b;
+}
+
+/* Botón CONFIRMAR RESERVA */
+.btn-success {
+    -fx-background-color: #198754;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.btn-success:hover {
+    -fx-background-color: #157347;
+}
+
+/* Botón Deshabilitado (desactivado dinámicamente) */
+.btn:disabled {
+    -fx-opacity: 0.55;
+    -fx-cursor: default;
+}
