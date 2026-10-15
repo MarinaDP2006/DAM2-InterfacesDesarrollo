@@ -1,6 +1,0 @@
-com\salesianas\manageralumnos\controller\ListadoController.class
-com\salesianas\manageralumnos\HelloApplication.class
-module-info.class
-com\salesianas\manageralumnos\model\AlumnosRepository.class
-com\salesianas\manageralumnos\model\Alumno.class
-com\salesianas\manageralumnos\controller\FormularioController.class
