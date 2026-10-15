@@ -1,0 +1,21 @@
+# Java / Maven / Gradle
+target/
+out/
+build/
+*.class
+.gradle/
+m2/
+
+# JavaFX / IDEs
+.idea/
+*.iml
+*.iws
+.vscode/
+.settings/
+
+# SceneBuilder cache
+*.fxml.bak
+
+# OS
+.DS_Store
+Thumbs.db
