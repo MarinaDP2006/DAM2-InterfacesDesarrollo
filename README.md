@@ -2,10 +2,6 @@
 
 Prácticas de interfaces de usuario con JavaFX.
 
-##  Contenido
-- **ManagerAlumnos/** - CRUD con JavaFX + TableView
-- **Otros proyectos JavaFX** - Layouts, CSS, FXML
-
 ##  Tecnologías
 - Java 21
 - JavaFX 21
