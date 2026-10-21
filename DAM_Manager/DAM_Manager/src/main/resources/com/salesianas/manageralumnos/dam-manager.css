@@ -1,0 +1,155 @@
+/* ===== Paleta: grafito oscuro + acento índigo ===== */
+.root {
+    -c-bg:        #0f1115;
+    -c-surface:   #171a21;
+    -c-surface-2: #1e222b;
+    -c-border:    #2a2f3a;
+    -c-text:      #e6e8ee;
+    -c-muted:     #8b93a7;
+    -c-accent:    #6366f1;
+    -c-accent-hv: #7c7ff5;
+    -c-danger:    #ef4444;
+    -c-success:   #16a34a;
+    -c-success-hv:#22c55e;
+
+    -fx-font-family: "Segoe UI Variable Text", "Segoe UI", "Inter", "Helvetica Neue", sans-serif;
+    -fx-font-size: 13.5px;
+    -fx-background-color: -c-bg;
+}
+
+.app-root { -fx-background-color: -c-bg; }
+
+.label { -fx-text-fill: -c-text; }
+
+/* ===== Cabecera ===== */
+.page-title {
+    -fx-font-family: "Segoe UI Variable Display", "Segoe UI Semibold", "Segoe UI", sans-serif;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -c-text;
+}
+
+.page-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: -c-muted;
+}
+
+/* ===== Botones ===== */
+.btn-primary, .btn-success, .btn-secondary, .btn-danger {
+    -fx-font-weight: bold;
+    -fx-padding: 8 18 8 18;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+}
+
+.btn-primary {
+    -fx-background-color: -c-accent;
+    -fx-text-fill: white;
+}
+.btn-primary:hover { -fx-background-color: -c-accent-hv; }
+
+/* Variante verde para la acción principal del listado */
+.btn-success {
+    -fx-background-color: -c-success;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+.btn-success:hover { -fx-background-color: -c-success-hv; }
+
+.btn-secondary {
+    -fx-background-color: -c-surface-2;
+    -fx-border-color: -c-border;
+    -fx-text-fill: -c-text;
+}
+.btn-secondary:hover { -fx-background-color: #262b36; }
+
+.btn-danger {
+    -fx-background-color: transparent;
+    -fx-border-color: -c-danger;
+    -fx-text-fill: -c-danger;
+}
+.btn-danger:hover {
+    -fx-background-color: -c-danger;
+    -fx-text-fill: white;
+}
+
+.button:disabled { -fx-opacity: 0.4; }
+
+/* ===== Tabla ===== */
+.alumnos-table {
+    -fx-background-color: -c-surface;
+    -fx-border-color: -c-border;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 4;
+}
+
+.alumnos-table .column-header-background {
+    -fx-background-color: -c-surface;
+}
+
+.alumnos-table .column-header,
+.alumnos-table .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent -c-border transparent;
+    -fx-pref-height: 40;
+}
+
+.alumnos-table .column-header .label {
+    -fx-text-fill: -c-muted;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 0 0 8;
+}
+
+.alumnos-table .table-row-cell {
+    -fx-background-color: -c-surface;
+    -fx-border-color: transparent transparent #20242d transparent;
+    -fx-cell-size: 40;
+}
+
+.alumnos-table .table-row-cell .table-cell {
+    -fx-text-fill: -c-text;
+    -fx-padding: 0 0 0 8;
+    -fx-alignment: CENTER_LEFT;
+    -fx-border-color: transparent;
+}
+
+.alumnos-table .table-row-cell:hover { -fx-background-color: -c-surface-2; }
+
+.alumnos-table .table-row-cell:selected {
+    -fx-background-color: rgba(99, 102, 241, 0.22);
+}
+.alumnos-table .table-row-cell:selected .table-cell { -fx-text-fill: white; }
+
+.alumnos-table .placeholder .label { -fx-text-fill: -c-muted; }
+
+/* ===== Formulario ===== */
+.form-card {
+    -fx-background-color: -c-surface;
+    -fx-border-color: -c-border;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.field-label {
+    -fx-text-fill: -c-muted;
+    -fx-font-weight: bold;
+}
+
+.text-field, .combo-box {
+    -fx-background-color: -c-bg;
+    -fx-border-color: -c-border;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: -c-text;
+    -fx-prompt-text-fill: #5b6275;
+    -fx-pref-height: 34;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: -c-accent;
+}
